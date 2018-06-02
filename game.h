@@ -1,9 +1,9 @@
 #ifndef GAME_H
 #define GAME_H
 
-
 #include <QGraphicsScene>
 #include <QGraphicsView>
+#include <QLineEdit>
 
 #include <QGraphicsPixmapItem>
 #include <QGraphicsItem>
@@ -15,18 +15,19 @@ class Game :public QGraphicsView {
 public:
     Game(QWidget *parent = 0);
 
-public slots:
-    void start();
-
+    bool validarItems();
     void displayMainMenu();
     void drawChessBoard();
 
     void addToScene(QGraphicsItem *item);
     void removeFromScene(QGraphicsItem *item);
 
+public slots:
+    void start();
+
 private:
     QGraphicsScene *gameScene;
-
+    QLineEdit *appleLine;
 };
 
 #endif // GAME_H

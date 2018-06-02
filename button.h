@@ -1,0 +1,28 @@
+#ifndef BUTTON_H
+#define BUTTON_H
+
+#include <QGraphicsSceneMouseEvent>
+#include <QGraphicsRectItem>
+#include <QObject>
+
+class Button : public QObject, public QGraphicsRectItem
+{
+    Q_OBJECT
+public:
+    Button(QString name, QGraphicsItem * parent = NULL);
+
+    // events
+    void mousePressEvent(QGraphicsSceneMouseEvent *event);
+    void hoverEnterEvent(QGraphicsSceneHoverEvent *event);
+    void hoverLeaveEvent(QGraphicsSceneHoverEvent *event);
+
+signals:
+    void clicked();
+
+public slots:
+
+private:
+    QGraphicsTextItem *text;
+};
+
+#endif // BUTTON_H
