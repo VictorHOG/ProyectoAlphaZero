@@ -1,6 +1,9 @@
 <RCC>
     <qresource prefix="/">
-        <file>images/a.jpg</file>
+        <file>images/apple.png</file>
+        <file>images/background.jpg</file>
+        <file>images/horse.png</file>
+        <file>images/horse1.png</file>
         <file>images/iconAppleHorseChess.ico</file>
     </qresource>
 </RCC>

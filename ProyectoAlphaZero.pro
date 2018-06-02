@@ -25,10 +25,12 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         game.cpp \
-    button.cpp
+    button.cpp \
+    horse.cpp
 
 HEADERS  += game.h \
-    button.h
+    button.h \
+    horse.h
 
 RESOURCES += \
     images.qrc
